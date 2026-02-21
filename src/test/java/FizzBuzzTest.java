@@ -1,4 +1,10 @@
-package PACKAGE_NAME;
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
 
-public class FizzBuzzTest {
+import org.example.FizzBuzz;
+class FizzBuzzTest {
+    @Test
+    void testFizzBuzzReturnsNumber() {
+        assertEquals("1", FizzBuzz.fizzbuzz(1));
+    }
 }
